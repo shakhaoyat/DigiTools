@@ -1,4 +1,6 @@
 import React from 'react';
+import { CiPlay1 } from "react-icons/ci";
+
 
 const hero = () => {
       return (
@@ -17,11 +19,15 @@ const hero = () => {
 
                                           Explore Products
                                     </p>
-                                    <button className="btn btn-primary">Get Started</button>
+                                    <div className='flex gap-4'>
+                                          <button className="btn btn-primary rounded-3xl">Explore Products</button>
+                                          <button className="btn btn-outline btn-primary rounded-3xl"><CiPlay1 />
+                                                Watch Demo</button>
+                                    </div>
                               </div>
                         </div>
                   </div>
-            </div>
+            </div >
       );
 };
 
