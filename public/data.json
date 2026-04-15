@@ -1,0 +1,138 @@
+[
+      {
+            "id": "cv-builder-pro",
+            "name": "CV Builder Pro",
+            "description": "A smart resume builder designed to create ATS-friendly CVs with modern templates and optimization tools.",
+            "price": 9.99,
+            "period": "monthly",
+            "tag": "popular",
+            "tagType": "popular",
+            "features": [
+                  "100+ ATS-friendly templates",
+                  "AI resume optimization",
+                  "Export to PDF & DOCX",
+                  "Cover letter generator",
+                  "Real-time score analysis"
+            ],
+            "icon": "📄"
+      },
+      {
+            "id": "portfolio-maker",
+            "name": "Portfolio Maker",
+            "description": "Create stunning developer and designer portfolios with drag-and-drop simplicity.",
+            "price": 19.99,
+            "period": "monthly",
+            "tag": "new",
+            "tagType": "new",
+            "features": [
+                  "Modern UI templates",
+                  "Custom domain support",
+                  "No-code builder",
+                  "SEO optimization",
+                  "Responsive design"
+            ],
+            "icon": "🎨"
+      },
+      {
+            "id": "dev-toolkit",
+            "name": "Developer Toolkit",
+            "description": "All-in-one toolkit for developers including code snippets, API tester, and debugging utilities.",
+            "price": 49,
+            "period": "yearly",
+            "tag": "best seller",
+            "tagType": "best seller",
+            "features": [
+                  "API testing console",
+                  "Code formatter & linter",
+                  "Snippet library",
+                  "JSON validator",
+                  "Performance tools"
+            ],
+            "icon": "🛠️"
+      },
+      {
+            "id": "social-media-manager",
+            "name": "Social Media Manager",
+            "description": "Schedule, analyze, and manage all your social media accounts from one dashboard.",
+            "price": 14.99,
+            "period": "monthly",
+            "tag": "popular",
+            "tagType": "popular",
+            "features": [
+                  "Multi-platform scheduling",
+                  "Analytics dashboard",
+                  "Hashtag suggestions",
+                  "Auto-posting system",
+                  "Engagement tracking"
+            ],
+            "icon": "📊"
+      },
+      {
+            "id": "ai-writing-assistant",
+            "name": "AI Writing Assistant",
+            "description": "Boost your writing productivity with AI-powered content generation and editing tools.",
+            "price": 12.99,
+            "period": "monthly",
+            "tag": "new",
+            "tagType": "new",
+            "features": [
+                  "Blog & article generation",
+                  "Grammar correction",
+                  "Tone adjustment",
+                  "SEO optimization",
+                  "Plagiarism checker"
+            ],
+            "icon": "✍️"
+      },
+      {
+            "id": "ui-kit-premium",
+            "name": "UI Kit Premium",
+            "description": "High-quality UI components and design system for modern web applications.",
+            "price": 29,
+            "period": "one-time",
+            "tag": "best seller",
+            "tagType": "best seller",
+            "features": [
+                  "500+ UI components",
+                  "Dark & light mode support",
+                  "Figma + React files",
+                  "Responsive layouts",
+                  "Design system included"
+            ],
+            "icon": "💎"
+      },
+      {
+            "id": "seo-booster",
+            "name": "SEO Booster Tool",
+            "description": "Improve website ranking with keyword analysis, backlink tracking, and SEO audits.",
+            "price": 24.99,
+            "period": "monthly",
+            "tag": "popular",
+            "tagType": "popular",
+            "features": [
+                  "Keyword research tool",
+                  "Backlink monitoring",
+                  "Site audit reports",
+                  "Competitor analysis",
+                  "Rank tracking"
+            ],
+            "icon": "🚀"
+      },
+      {
+            "id": "freelance-dashboard",
+            "name": "Freelance Dashboard",
+            "description": "Manage freelance projects, invoices, and clients efficiently in one place.",
+            "price": 39,
+            "period": "yearly",
+            "tag": "new",
+            "tagType": "new",
+            "features": [
+                  "Project management",
+                  "Invoice generator",
+                  "Client tracking",
+                  "Payment history",
+                  "Time tracking tools"
+            ],
+            "icon": "💼"
+      }
+]
