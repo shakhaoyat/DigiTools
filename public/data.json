@@ -14,7 +14,7 @@
                   "Cover letter generator",
                   "Real-time score analysis"
             ],
-            "icon": "📄"
+            "icon": "/src/assets/products/writing_2327400 1.png"
       },
       {
             "id": "portfolio-maker",
@@ -31,7 +31,7 @@
                   "SEO optimization",
                   "Responsive design"
             ],
-            "icon": "🎨"
+            "icon": "/src/assets/products/portfolio.png"
       },
       {
             "id": "dev-toolkit",
@@ -48,7 +48,7 @@
                   "JSON validator",
                   "Performance tools"
             ],
-            "icon": "🛠️"
+            "icon": "/src/assets/products/design-tool.png"
       },
       {
             "id": "social-media-manager",
@@ -65,7 +65,7 @@
                   "Auto-posting system",
                   "Engagement tracking"
             ],
-            "icon": "📊"
+            "icon": "/src/assets/products/writing_2327400 1.png"
       },
       {
             "id": "ai-writing-assistant",
@@ -82,7 +82,7 @@
                   "SEO optimization",
                   "Plagiarism checker"
             ],
-            "icon": "✍️"
+            "icon": "/src/assets/products/shopping-cart.png"
       },
       {
             "id": "ui-kit-premium",
@@ -99,7 +99,7 @@
                   "Responsive layouts",
                   "Design system included"
             ],
-            "icon": "💎"
+            "icon": "/src/assets/products/social-media.png"
       },
       {
             "id": "seo-booster",
@@ -116,7 +116,7 @@
                   "Competitor analysis",
                   "Rank tracking"
             ],
-            "icon": "🚀"
+            "icon": "/src/assets/products/operation.png"
       },
       {
             "id": "freelance-dashboard",
@@ -133,6 +133,6 @@
                   "Payment history",
                   "Time tracking tools"
             ],
-            "icon": "💼"
+            "icon": "/src/assets/products/portfolio.png"
       }
 ]

@@ -1,5 +1,6 @@
 
 import './App.css'
+import { useEffect, useState } from 'react'
 import NavBer from './components/navBer'
 import Hero from './components/hero'
 import Status from './components/status'
@@ -13,13 +14,23 @@ const fetchProducts = async () => {
 }
 
 function App() {
-  const products = fetchProducts();
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const loadProducts = async () => {
+      const data = await fetchProducts();
+      setProducts(data);
+    };
+
+    loadProducts();
+  }, []);
+
   return (
     <>
       <NavBer></NavBer>
       <Hero></Hero>
       <Status></Status>
-      <Products></Products>
+      <Products products={products}></Products>
     </>
   )
 }
