@@ -2,7 +2,7 @@ import React from 'react';
 import { CiShoppingCart } from "react-icons/ci";
 
 
-const navBer = () => {
+const navBer = ({ cartCount = 0 }) => {
       return (
             <div>
                   <div className="navbar bg-base-100 shadow-sm">
@@ -34,8 +34,12 @@ const navBer = () => {
                         </div>
                         <div className="navbar-end ">
                               <ul className='flex gap-2 items-center'>
-                                    <li><a href=""><CiShoppingCart />
-                                    </a></li>
+                                    <li className="relative">
+                                          <a href="" className="flex items-center gap-1">
+                                                <CiShoppingCart className="text-xl" />
+                                                {cartCount > 0 && <span className="badge badge-sm badge-primary">{cartCount}</span>}
+                                          </a>
+                                    </li>
                                     <li><a href="">Login</a></li>
                                     <li><a className="btn rounded-3xl btn-primary">Get Started</a></li>
                               </ul>
