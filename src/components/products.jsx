@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const productIconModules = import.meta.glob('../assets/products/*', { eager: true, import: 'default' });
 
@@ -18,7 +19,7 @@ const Products = ({ products, cartItems, addToCart, removeFromCart, clearCart })
       const cartTotal = cartItems.reduce((sum, item) => sum + item.price, 0).toFixed(2);
 
       const handleCheckout = () => {
-            alert(`Proceeding to checkout with $${cartTotal}`);
+            toast.success(`Proceeding to checkout with $${cartTotal}`);
             clearCart();
             setActiveView('products');
       };
@@ -78,7 +79,15 @@ const Products = ({ products, cartItems, addToCart, removeFromCart, clearCart })
                                                       ))}
                                                 </ul>
                                                 <div className="mt-6">
-                                                      <button onClick={() => addToCart(product)} className="btn  bg-purple-500 btn-block rounded-3xl">Buy Now</button>
+                                                      <button
+                                                            onClick={() => {
+                                                                  addToCart(product);
+                                                                  toast.success(`${product.name} added to cart`);
+                                                            }}
+                                                            className="btn  bg-purple-500 btn-block rounded-3xl"
+                                                      >
+                                                            Buy Now
+                                                      </button>
                                                 </div>
                                           </div>
                                     </div>
@@ -101,7 +110,13 @@ const Products = ({ products, cartItems, addToCart, removeFromCart, clearCart })
                                                                         <p className="text-sm text-slate-500">${item.price}</p>
                                                                   </div>
                                                             </div>
-                                                            <button onClick={() => removeFromCart(item.id)} className="text-pink-500 hover:text-pink-700 font-medium">
+                                                            <button
+                                                                  onClick={() => {
+                                                                        removeFromCart(item.id);
+                                                                        toast.info(`${item.name} removed from cart`);
+                                                                  }}
+                                                                  className="text-pink-500 hover:text-pink-700 font-medium"
+                                                            >
                                                                   Remove
                                                             </button>
                                                       </div>

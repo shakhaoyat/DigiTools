@@ -1,6 +1,8 @@
 
 import './App.css'
 import { useEffect, useState } from 'react'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import NavBer from './components/navBer'
 import Hero from './components/hero'
 import Status from './components/status'
@@ -67,6 +69,7 @@ function App() {
       <PriceList plans={plans}></PriceList>
       <WorkFlowFooter></WorkFlowFooter>
       <Footer></Footer>
+      <ToastContainer position="top-right" autoClose={2500} hideProgressBar={false} newestOnTop closeOnClick pauseOnHover draggable theme="colored" />
     </>
   )
 }
