@@ -1,5 +1,6 @@
 import React from 'react';
 import { CiShoppingCart } from "react-icons/ci";
+import logoImage from '../assets/DigiTools.png';
 
 
 const navBer = ({ cartCount = 0 }) => {
@@ -21,7 +22,7 @@ const navBer = ({ cartCount = 0 }) => {
                                           <li><a>FAQ</a></li>
                                     </ul>
                               </div>
-                              <img className="btn btn-ghost text-xl" src="/src/assets/DigiTools.png" alt="" />
+                              <img className="btn btn-ghost text-xl" src={logoImage} alt="DigiTools" />
                         </div>
                         <div className="navbar-center hidden lg:flex">
                               <ul className="menu menu-horizontal px-1">
@@ -41,7 +42,7 @@ const navBer = ({ cartCount = 0 }) => {
                                           </a>
                                     </li>
                                     <li><a href="">Login</a></li>
-                                    <li><a className="btn rounded-3xl btn-primary">Get Started</a></li>
+                                    <li><a className="btn rounded-3xl  bg-purple-500">Get Started</a></li>
                               </ul>
 
                         </div>

@@ -1,5 +1,16 @@
 import React, { useState } from 'react';
 
+const productIconModules = import.meta.glob('../assets/products/*', { eager: true, import: 'default' });
+
+const resolveProductIcon = (iconPath) => {
+      if (!iconPath) {
+            return '';
+      }
+
+      const fileName = iconPath.split('/').pop();
+      return productIconModules[`../assets/products/${fileName}`] || '';
+};
+
 const Products = ({ products, cartItems, addToCart, removeFromCart, clearCart }) => {
       const productList = Array.isArray(products) ? products : [];
       const [activeView, setActiveView] = useState('products');
@@ -47,7 +58,7 @@ const Products = ({ products, cartItems, addToCart, removeFromCart, clearCart })
                                                       <span className="badge badge-xs badge-warning justify-end">{product.tag}</span>
                                                 </div>
                                                 <div>
-                                                      <img className="mask mask-circle" src={product.icon} alt={product.name} />
+                                                      <img className="mask mask-circle" src={resolveProductIcon(product.icon)} alt={product.name} />
                                                 </div>
 
                                                 <div className="flex justify-between">
@@ -67,7 +78,7 @@ const Products = ({ products, cartItems, addToCart, removeFromCart, clearCart })
                                                       ))}
                                                 </ul>
                                                 <div className="mt-6">
-                                                      <button onClick={() => addToCart(product)} className="btn btn-primary btn-block rounded-3xl">Buy Now</button>
+                                                      <button onClick={() => addToCart(product)} className="btn  bg-purple-500 btn-block rounded-3xl">Buy Now</button>
                                                 </div>
                                           </div>
                                     </div>
@@ -84,7 +95,7 @@ const Products = ({ products, cartItems, addToCart, removeFromCart, clearCart })
                                                 {cartItems.map((item) => (
                                                       <div key={item.id} className="flex items-center justify-between rounded-lg border border-slate-200 bg-white p-4">
                                                             <div className="flex items-center gap-4">
-                                                                  <img src={item.icon} alt={item.name} className="h-12 w-12" />
+                                                                  <img src={resolveProductIcon(item.icon)} alt={item.name} className="h-12 w-12" />
                                                                   <div>
                                                                         <p className="font-semibold text-slate-900">{item.name}</p>
                                                                         <p className="text-sm text-slate-500">${item.price}</p>
