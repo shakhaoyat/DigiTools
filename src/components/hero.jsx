@@ -14,7 +14,7 @@ const hero = () => {
                               />
                               <div>
                                     <div>
-                                          <div className="flex justify-center">
+                                          <div className="flex ">
                                                 <div className="flex items-center gap-2 px-5 py-2 rounded-full bg-purple-100 text-purple-600 text-sm font-medium">
                                                       <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
                                                       New: AI-Powered Tools Available
