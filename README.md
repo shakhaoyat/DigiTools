@@ -1,6 +1,5 @@
 # DigiTools
-
-> A modern digital tools marketplace built with React and Vite.
+A modern digital tools marketplace built with React and Vite.
 
 ## About
 
