@@ -3,7 +3,7 @@ A modern digital tools marketplace built with React and Vite.
 
 ## Live Demo
 
-Explore the deployed project here: [stirring-syrniki-e1337a.netlify.app](https://stirring-syrniki-e1337a.netlify.app)
+Check the live link: [Check Live Link](https://stirring-syrniki-e1337a.netlify.app)
 
 ## About
 
