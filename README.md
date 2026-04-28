@@ -1,6 +1,10 @@
 # DigiTools
 A modern digital tools marketplace built with React and Vite.
 
+## Live Demo
+
+Explore the deployed project here: [stirring-syrniki-e1337a.netlify.app](https://stirring-syrniki-e1337a.netlify.app)
+
 ## About
 
 DigiTools is a clean and responsive web app for exploring premium digital products, managing a cart, and viewing pricing plans in a smooth user experience.
